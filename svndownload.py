@@ -1,7 +1,7 @@
 import os
 import requests
 import sys
-proxies = {'http' : 'http://103.28.38.238:20648'}
+proxies = {'http' : sys.argv[2]}
 victim = sys.argv[1]
 
 def getct(url):
@@ -10,7 +10,7 @@ def getct(url):
 def checkentries(filee):
   with open(filee, 'r') as file:
     for line in file:
-      if 'https://phatnk2@fproject.fpt.vn/svn/fptplay-tv' in line.split(): #edit yourselves
+      if 'this fucking thing is used to detect if entries file is real or not' in line.split(): #edit yourselves
         return True
     else:
       return False
